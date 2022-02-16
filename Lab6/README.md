@@ -1,11 +1,11 @@
 # LAB 6
-Rasya Soeroso (A16088908)
+Rasya Soeroso (A16088908) <br>
+Gino
 
 Objective
 
 ## Tutorials
 
-<!-- - __Tutorial 1: Setup Raspberry Pi__ -->
 ### Tutorial 1: Setup Raspberry Pi
     
 This tutorial 
@@ -19,8 +19,6 @@ This tutorial
 
 <br><br>
 
-<!-- - __Tutorial 2: Tutorial 2: Basic I/O__  -->
-
 ### Tutorial 2: Tutorial 2: Basic I/O
 
 This tutorial 
@@ -29,7 +27,6 @@ This tutorial
 
 ## Challenges
 
-<!-- - __Challenge 1: Midterm__ -->
 ### Challenge 1: Midterm
 
 
