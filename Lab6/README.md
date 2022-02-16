@@ -5,27 +5,31 @@ Objective
 
 ## Tutorials
 
-- __Tutorial 1: Setup Raspberry Pi__
+<!-- - __Tutorial 1: Setup Raspberry Pi__ -->
+### Tutorial 1: Setup Raspberry Pi
     
-    This tutorial 
+This tutorial 
 
-    <img src="screenshots/t1.png" alt="home page" width="300">
-    <img src="screenshots/t2.png" alt="home page" width="300">
-    <img src="screenshots/t3.png" alt="home page" width="300">
-    <img src="screenshots/t4.png" alt="home page" width="300">
-    <img src="screenshots/t5.png" alt="home page" width="300">
-    <img src="screenshots/t6.png" alt="home page" width="300">
+<img src="screenshots/t1.png" alt="home page" width="300">
+<img src="screenshots/t2.png" alt="home page" width="300">
+<img src="screenshots/t3.png" alt="home page" width="300">
+<img src="screenshots/t4.png" alt="home page" width="300">
+<img src="screenshots/t5.png" alt="home page" width="300">
+<img src="screenshots/t6.png" alt="home page" width="300">
 
-    <br><br>
+<br><br>
 
-- __Tutorial 2: Tutorial 2: Basic I/O__ 
+<!-- - __Tutorial 2: Tutorial 2: Basic I/O__  -->
 
-    This tutorial 
+### Tutorial 2: Tutorial 2: Basic I/O
 
-     <br><br>
+This tutorial 
+
+<br><br>
 
 ## Challenges
 
-- __Challenge 1: Midterm__
+<!-- - __Challenge 1: Midterm__ -->
+### Challenge 1: Midterm
 
 
