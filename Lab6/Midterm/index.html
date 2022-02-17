@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm</title>
+</head>
+<body>
+    <div>Sensor to Display</div>
+    <select name="sensor" id="sensor" onchange="get_sensor()">
+      <option value=1>Photoresistor and DHT-11</option>
+      <option value=2>Photoresistor</option>
+      <option value=3>DHT-11</option>
+    </select>
+    <div>Average Value</div>
+    <select name="average" id="average" onchange="get_average()">
+      <option value=1>Just now</option>
+      <option value=2>1 min</option>
+      <option value=3>5 mins</option>
+    </select>
+    <br><br>
+    <input type="button" value="Submit" onclick="submit()">
+    <div>
+      <br>
+      <div id="error">error message</div>
+      <!-- <br> -->
+      <!-- <img id='pic' src="" width=400 length=300> -->
+      <div id="light_avg">light avg</div> 
+      <div id="dht_avg">dht avg</div> 
+    </div>
+    <br>
+    <input type="button" value="LED Matrix On" onclick="LED_on()">
+    <input type="button" value="LED Matrix Off" onclick="LED_off()">
+
+    <script type="text/javascript" src="rest.js"></script>
+</body>
+</html>
