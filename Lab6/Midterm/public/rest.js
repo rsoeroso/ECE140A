@@ -4,6 +4,21 @@ function get_sensor() {
 function get_average() {
     return document.getElementById('average').value;
 }
+function show_plant() {
+    let plant_id = get_plant();
+    if (plant_id == 1) {
+        document.getElementById('pic').src = 'monstera.jpg';
+    }
+    else if (plant_id == 2) {
+        document.getElementById('pic').src = 'alocasia.jpg';
+    }
+    else {
+        document.getElementById('pic').src = 'zz.jpg';
+    }
+}
+function get_plant() {
+    return document.getElementById('plant').value;
+}
 function submit() {
     let sensor_id = get_sensor();
     let average_id = get_average();
