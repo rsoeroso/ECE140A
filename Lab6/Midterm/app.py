@@ -54,11 +54,6 @@ def get_everything(req):
     sensor_id = int(req.matchdict['sensor_id'])
     average_id = int(req.matchdict['average_id'])
     LED_id = int(req.matchdict['LED_id'])
-
-    # DEBUG
-    # print('sensor_id %s' % sensor_id)
-    # print('average_id %s' % average_id)
-    # print('LED_id %s' % LED_id)
     
     '''
     sensor_id
