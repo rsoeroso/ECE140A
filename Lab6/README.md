@@ -48,7 +48,7 @@ As an extra feature, we added an LED bar graph that interacts with a button on t
 Here is an image of the final breadboard circuit:
 
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9458.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>We can see that the circuit contains all the components necessary for our implementation.</i></b> </p>
