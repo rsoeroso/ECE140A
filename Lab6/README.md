@@ -91,4 +91,22 @@ In order for our webpage to actually function correctly, we had to implement RES
 
 #### get_everything(req):
 
+The get_everything(req) function is the main handler of our webpage. It takes in a series of IDs in a single route, which dictates which sensors we are sampling and at which frequency we are sampling them.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/geteverything.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>When the user hits submit, the get_everything function is called with a route. As shown in the comments in the image, the sequence of IDs from the route correspond to which sensors we are sampling and at which frequency we are sampling them.</i></b> </p>
+
+#### getTemperature()
+
+#### getHumidity()
+
+#### getLight()
+
+#### shiftOut()
+
+
+
 
