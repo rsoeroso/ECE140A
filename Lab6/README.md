@@ -80,7 +80,7 @@ To begin, we first had to create a new MySQL database, called Lab6. This databas
 Next, we designed an HTML webpage with all of the above criteria, as so:
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/webpage.jpg?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/webpage.png?raw=true" />
 </p>
 
 <p align="center"> <b><i>All images, text, buttons, and dropdown lists are present on our HTML page. We can see that we have added aspects of CSS to the webpage too.</i></b> </p>
