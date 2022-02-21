@@ -39,7 +39,22 @@ This tutorial
 
 ### Challenge 1: Midterm
 
+For our Midterm, we decided to implement a website that offers feedback on lighting, temperature, and humidity conditions, as they pertain to household plants!
+
+In order to implement this, we decided to use the Photoresistor (to measure light) and the DHT11 sensor (to measure temperature and humidity), which were both included in our starter kit.
+
+As an extra feature, we added an LED bar graph that interacts with a button on the webpage.
+
+Here is an image of the final breadboard circuit:
+
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>We can see that the circuit contains all the components necessary for our implementation.</i></b> </p>
+
 ### Functions
 
-####
+#### get_everything(req):
+
 
