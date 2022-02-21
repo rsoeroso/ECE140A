@@ -31,13 +31,101 @@ function get_plant() {
 function submit() {
     let sensor_id = get_sensor();
     let average_id = get_average();
+    let plant_id = get_plant();
+    let msg = '';
+    let low_light = 741;
+    let high_light = 882;
+    
     let theURL = '/' + sensor_id + '/' + average_id + '/2';
     fetch(theURL)
     .then(response=>response.json())
     .then(function(response) {
-        for(var key in response) {
-            document.getElementById(key).textContent = key + '\t: ' + response[key];
+        // for(var key in response) {
+        //     document.getElementById(key).textContent = key + '\t: ' + response[key];
+        // }
+        document.getElementById('error').textContent = response['error'];
+        document.getElementById('light_avg').textContent = 'Light\t\t\t: ' + response['light_avg'];
+        document.getElementById('temp_avg').textContent = 'Temperature\t: ' + response['temp_avg'] + '°C';
+        document.getElementById('humid_avg').textContent = 'Humidity\t\t: ' + response['humid_avg'] + '%';
+
+        if (response['error'] == '') {
+            let msg1 = '';
+            let msg2 = '';
+            let msg3 = '';
+            if (plant_id == 1) {
+                // Monstera
+                if (response['light_avg'] >= high_light) {
+                    msg1 = ''
+                }
+                else {
+                    msg1 = 'Too dark! ' 
+                }
+                if (response['temp_avg'] < 15) {
+                    msg2 = 'Too cold! '
+                }
+                else if (response['temp_avg'] > 30) {
+                    msg2 = 'Too warm! '
+                }
+                else {
+                    msg2 = ''
+                }
+                if (response['humid_avg'] < 50) {
+                    msg3 = 'Increase humidity! '
+                }
+                else {
+                    msg3 = ''
+                }
+            }
+            else if (plant_id == 2) {
+                // Alocasia
+                if (response['light_avg'] >= low_light) {
+                    msg1 = ''
+                }
+                else {
+                    msg1 = 'Too dark! '
+                }
+                if (response['temp_avg'] < 15) {
+                    msg2 = 'Too cold! '
+                }
+                else if (response['temp_avg'] > 30) {
+                    msg2 = 'Too warm! '
+                }
+                else {
+                    msg2 = ''
+                }
+                if (response['humid_avg'] < 50) {
+                    msg3 = 'Increase humidity! '
+                }
+                else {
+                    msg3 = ''
+                }
+            }
+            else {
+                // ZZ plant
+                if (response['light_avg'] > high_light) {
+                    msg1 = 'Too bright! '
+                }
+                else {
+                    msg1 = ''
+                }
+                if (response['temp_avg'] < 8) {
+                    msg2 = 'Too cold! '
+                }
+                else if (response['temp_avg'] > 24) {
+                    msg2 = 'Too warm! '
+                }
+                else {
+                    msg2 = ''
+                }
+            }
+            if (msg1 != '' || msg2 != '' || msg3 != '') {
+                msg = msg1 + msg2 + msg3
+            }
+            else {
+                msg = 'Perfect brightness, temperature, and humidity!'
+            }
         }
+        document.getElementById('msg').textContent = msg;
     });
 }
 function LED_on() {

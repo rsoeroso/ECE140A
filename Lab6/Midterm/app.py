@@ -44,9 +44,10 @@ def get_everything(req):
     '''
 
     response = {
-        'error': 'test',
-        'light_avg': 'test',
-        'dht_avg': 'test'
+        'error': '',
+        'light_avg': 750,
+        'temp_avg': 20,
+        'humid_avg': 20
     }
 
     return response
