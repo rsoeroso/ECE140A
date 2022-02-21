@@ -6,33 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
 </head>
+<style>
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 0.9;
+  }
+
+ body
+ {
+    font-family: system-ui;
+    background: #8adaff;
+    font-size: 100%;
+    line-height: 1.6;
+    color: black;
+    text-align: left;
+ }
+
+ img
+ {
+  border-style: solid;
+  border-width: 10px;
+ }
+
+ hr.rounded 
+ {
+  border-top: 8px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+select
+{
+  margin-left: 25px;
+}
+
+input
+{
+  margin-left: 25px;
+  font-size: 16px;
+}
+</style>
 <body>
     <h1>Houseplants Light and Humidity Guide</h1>
-    <div>Pick your houseplant!</div>
+    <hr class="rounded">
+    
+    <br>
+    <div style="padding: 25px; width: 250px; display: inline-block;"><img id='pic' src="monstera.jpg" width="250"></div>
+    <div style="padding: 0px; width: 500px;display:  inline-block; font-size: 20px;">
+      <div style="margin-left: 10px;" ><strong>Sunlight</strong></div>
+      <div style="margin-left: 10px;" id="light">Thrives in bright to medium indirect light. Not suited for intense, direct sun but can be acclimated to withstand it.</div>
+      <div style="margin-left: 10px;"><strong>Humidity</strong></div>
+      <div style="margin-left: 10px;" id="humidity">Normal room humidity will do, but prefers humid conditions if possible.</div>
+      <div style="margin-left: 10px;"><strong>Temperature</strong></div>
+      <div style="margin-left: 10px;" id="temp">Prefers temps in the 65°F-85°F range (18°C-30°C). It’s best not to let it go below 60°F (15°C).</div>
+      <br>
+    </div>
+    <br>
+    <div style="font-size: 100%;
+    line-height: 1.6; padding-left: 25px;">Pick your houseplant!</div>
     <select name="plant" id="plant" onchange="show_plant()">
       <option value=1>Monstera Deliciosa</option>
       <option value=2>Alocasia 'Regal Shield'</option>
       <option value=3>ZZ Plant</option>
     </select>
-    <br>
-    <div style="padding: 25px; width: 250px; display: inline-block;"><img id='pic' src="monstera.jpg" width="250"></div>
-    <div style="padding: 0px; width: 500px;display:  inline-block;">
-      <div><strong>Sunlight</strong></div>
-      <div id="light">Thrives in bright to medium indirect light. Not suited for intense, direct sun but can be acclimated to withstand it.</div>
-      <div><strong>Humidity</strong></div>
-      <div id="humidity">Normal room humidity will do, but prefers humid conditions if possible.</div>
-      <div><strong>Temperature</strong></div>
-      <div id="temp">Prefers temps in the 65°F-85°F range (18°C-30°C). It’s best not to let it go below 60°F (15°C).</div>
-      <br>
-    </div>
-    <br>
-    <div>Sensor to Display</div>
+    <div style="font-size: 100%;
+    line-height: 1.6; padding-left: 25px;">Sensor(s) to Display</div>
     <select name="sensor" id="sensor" onchange="get_sensor()">
       <option value=1>Photoresistor and DHT-11</option>
       <option value=2>Photoresistor</option>
       <option value=3>DHT-11</option>
     </select>
-    <div>Average Value</div>
+    <div style="font-size: 100%;
+    line-height: 1.6; padding-left: 25px;">Average Value</div>
     <select name="average" id="average" onchange="get_average()">
       <option value=1>Just now</option>
       <option value=2>1 min</option>
@@ -40,17 +89,18 @@
     </select>
     <br><br>
     <input type="button" value="Submit" onclick="submit()">
+    <div style="font-size: 100%;
+    line-height: 1.6; padding-left: 25px;">Time Remaining: <span id="timer"></span></div>
     <div>
       <br>
-      <div id="error"></div>
-      <div id="light_avg"></div> 
-      <div id="temp_avg"></div>
-      <div id="humid_avg"></div> 
-      <div id='msg'></div>
+      <div style="padding-left: 25px;" id="error"></div>
+      <div style="padding-left: 25px;" id="light_avg"></div> 
+      <div style="padding-left: 25px;" id="temp_avg"></div>
+      <div style="padding-left: 25px;" id="humid_avg"></div> 
+      <div style="padding-left: 25px; font-style: bold;" id='msg'></div>
     </div>
     <br>
-    <input type="button" value="LED Matrix On" onclick="LED_on()">
-    <input type="button" value="LED Matrix Off" onclick="LED_off()">
+    <input type="button" value="LED Bargraph On" onclick="LED_on()">
 
     <script type="text/javascript" src="rest.js"></script>
 </body>

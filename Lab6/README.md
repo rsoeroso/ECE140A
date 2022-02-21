@@ -1,10 +1,14 @@
-# LAB 6
-Rasya Soeroso (A16088908) <br>
-Gino
+# Lab 4 Report
 
-Objective
+# Prepared by: 
+# Gino Calgaro, PID A15613364
+#Rasya Soeroso, PID A16088908
+
+# Date: 2/21/22
 
 ## Tutorials
+
+<hr>
 
 ### Tutorial 1: Setup Raspberry Pi
     
@@ -19,14 +23,23 @@ This tutorial
 
 <br><br>
 
+<hr>
+
 ### Tutorial 2: Tutorial 2: Basic I/O
 
 This tutorial 
 
 <br><br>
 
+<hr>
+
 ## Challenges
+
+<hr>
 
 ### Challenge 1: Midterm
 
+### Functions
+
+####
 
