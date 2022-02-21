@@ -196,11 +196,11 @@ function submit() {
             {
                 if (sensor_id == 1)
                 {
-                    msg = 'Perfect brightness!' 
+                    msg = 'Perfect brighness, temperature, and humidity!'
                 }
                 else if(sensor_id == 2)
-                {
-                    msg = 'Perfect brighness, temperature, and humidity!'
+                {  
+                    msg = 'Perfect brightness!' 
                 }
                 else if (sensor_id == 3)
                 {
