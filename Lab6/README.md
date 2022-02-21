@@ -1,8 +1,8 @@
-# Lab 4 Report
+# Lab 6 Report: Midterm
 
 # Prepared by: 
 # Gino Calgaro, PID A15613364
-#Rasya Soeroso, PID A16088908
+# Rasya Soeroso, PID A16088908
 
 # Date: 2/21/22
 
