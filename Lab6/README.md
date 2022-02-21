@@ -65,8 +65,27 @@ The frequencies:
 	<li> 5 mins: The sensors are sampled for 5 minutes. Again, if the sensor includes the DHT11, we have to reduce our sampling rate.
 </ol>
 
-Once the user has chosen all of the above criteria, they hit the 'Submit' button and the sensors are sampled. If the sensors are sampled more than once, a timer appears on the webpage and begins a countdown accordingly.
+Once the user has chosen all of the above criteria, they hit the 'Submit' button and the sensors are sampled. If the sensors are sampled more than once (i.e. sampled for 1 min or 5 mins), a timer appears on the webpage and begins a countdown accordingly.
 
+### Code
+
+To begin, we first had to create a new MySQL database, called Lab6. This database contains two tables, Photoresistor and DHT11. These tables contain the sampled values for both sensors.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/initdb.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Above is the code for initializing our database and tables. We can see that each table inserts a dummy value to begin.</i></b> </p>
+
+Next, we designed an HTML webpage with all of the above criteria, as so:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/webpage.jpg?raw=true" />
+</p>
+
+<p align="center"> <b><i>All images, text, buttons, and dropdown lists are present on our HTML page. We can see that we have added aspects of CSS to the webpage too.</i></b> </p>
+
+In order for our webpage to actually function correctly, we had to implement RESTful functions in both our app.py and rest.js files.
 
 ### Functions
 
