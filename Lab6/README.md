@@ -89,7 +89,7 @@ Finally, we can run the program using:
 
     python3 app.py
 
-#### Report
+## Report
 
 ## [Link to Demo Video](https://youtu.be/AtVoYA2o84A)
 
