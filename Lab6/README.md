@@ -39,7 +39,7 @@ In this tutorial, we learned to use sensors from our kit on Raspberry Pi. First,
 
 #### Running the Program
 
-The ```requirements.txt``` file should list all Python libraries that your notebooks depend on, and they will be installed using:
+The ```requirements.txt``` file should list all Python libraries that the program depends on, and they will be installed using:
 
     pip3 install -r requirements.txt
 
