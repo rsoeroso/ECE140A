@@ -17,7 +17,7 @@ In Tutorial 1, we set up the Rasberry Pi for the first time. This includes runni
 Once we got the Raspberry Pi up and running, we checked for updates:
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9439.jpg?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/tut1/IMG_9439.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>Running sudo apt update shows that all of our files are up to date.</i></b> </p>
@@ -25,7 +25,7 @@ Once we got the Raspberry Pi up and running, we checked for updates:
 Running the upgrade command showed that there was nothing eligible to upgrade.
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9440.jpg?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/tut1/IMG_9440.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>No upgrades were completed.</i></b> </p>
@@ -33,7 +33,7 @@ Running the upgrade command showed that there was nothing eligible to upgrade.
 With that out of the way, we could get the MySQL connector added to the Raspberry Pi. This is essential for the midterm challenge.
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9441.jpg?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/tut1/IMG_9441.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>Shown above is the MySQL connector working as expected.</i></b> </p>
@@ -60,7 +60,7 @@ With that taken care of, we are ready to move on to Tutorial 2!
 In this Tutorial, we learned to use sensors from our kit on Raspberry Pi. First, we connected the ultrasonic sensor and the piezoelectric buzzer to the breadboard, as instructed in the tutorial. After we run the provided code, we observed that the ultrasonic sensor was sampled every second, returning a distance value in cm. The buzzer will ring whenever the distance is greater than 0, i.e. whenever the ultrasonic sensor detects any object in front of it. We also learned the two ways of setting up Raspberry Pi in Python; ```GPIO.setmode(GPIO.BCM)``` and ```GPIO.setmode(GPIO.BOARD)```. This is crucial for determining the initialization of the pins in our code. 
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9456.jpg?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/tut2/IMG_9456.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>Above is the complete circuit for Tutorial 2.</i></b> </p>
