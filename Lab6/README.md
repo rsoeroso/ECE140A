@@ -51,7 +51,7 @@ In order to test that the Pi is working correctly, we cloned the code for Lab 5,
 
 With that taken care of, the Raspberry Pi is functioning with Python, as expected. Now we are ready to move on to Tutorial 2!
 
-<br><br>
+<br>
 
 <hr>
 
