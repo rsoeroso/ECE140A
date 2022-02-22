@@ -131,6 +131,14 @@ To begin, we first had to create a new MySQL database, called Lab6. This databas
 
 <p align="center"> <b><i>Above is the code for initializing our database and tables. We can see that each table inserts a dummy value to begin.</i></b> </p>
 
+Once the database is initialized, we can check if the initialization succeeded:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/tables.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>We can see that both tables were created after running init-db.py.</i></b> </p>
+
 Next, we designed an HTML webpage with all of the above criteria, as so:
 
 <p align="center">
@@ -155,13 +163,45 @@ In order for our webpage to actually function correctly, we had to implement RES
 
 <p align="center"> <b><i>When the user hits submit, the get_everything function is called with a route. As shown in the comments in the image, the sequence of IDs from the route correspond to which sensors we are sampling and at which frequency we are sampling them.</i></b> </p>
 
-- getTemperature()
+- getTemperature():
+	
+	getTemperature() reads the temperature from the DHT11 and returns a float value pertaining to that temperature.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/getTemp.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>The code for the getTemperature() function.</i></b> </p>
 
 - getHumidity()
 
+getHumidity() reads the humidity from the DHT11 and returns a float value for the humidity.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/getHumid.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>The code for the getHumidity() function. Since we are reading from the same sensor, the code is very similar to getTemperature().</i></b> </p>
+
 - getLight()
 
+getLight() returns the ADC value from the Photoresistor as an integer. Lower values = large amount of light, higher values = less light.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/getLight.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>The getLight() function is very simple, with only two lines.</i></b> </p>
+
 - shiftOut()
+
+the shiftOut() function is a function used for the LED bargraph. It creates a cascading waterfall effect, which can be seen in the end of the demo video.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/shift.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>The code for the shiftOut() function, which was defined by Freenove.</i></b> </p>
 
 #### ```rest.js```
 
@@ -193,6 +233,58 @@ In order for our webpage to actually function correctly, we had to implement RES
 
 - checkSecond(sec)
 
+#### ```init-db.py```
 
+- Contains all of the necessary code for initializing our Lab 6 database. This includes creating both tables for the Photoresistor and the DHT11 sensors.
 
+#### ```index.html```
 
+- HTML file used for formatting the webpage. Contains buttons, select dropdown menus, and images, among many other elements. CSS is used within the HTML file for styling purposes.
+
+#### ```credentials.env```
+
+- File containing key access details for the MySQL database.
+
+#### ```ADCDevice.py```
+
+- Python file used by Freenove for Analog-to-Digital conversion. This file is used to read the Photoresistor, i.e. it is used to convert the analog resistance into an 8-bit value (0-255).
+
+#### ```Freenove_DHT.py```
+
+- Python file used by Freenove to define the DHT11 class. The class defines an object that can be referenced to read the current temperature and/or the current humidity.
+
+### Testing
+
+For thourough testing, please observe the YouTube demo video <a href="https://www.youtube.com/watch?v=AtVoYA2o84A">here.</a>
+
+To verify that the code is inserting the sampled values into MySQL, we ran the web server and checked the tables for their values.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/test1.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Our first test: getting an instant reading from the photoresistor. We see the ADC value is 223.</i></b> </p>
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/prnow.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Querying the Photoresistor table shows that a singular value (223) was entered into the table.</i></b> </p>
+
+Our next test was sampling the photoresistor for a minute. There should be 60 values present in the table.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/test2.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Our second test: getting a 1 min average reading from the photoresistor.</i></b> </p>
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/pr1min.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Querying the Photoresistor table shows that multiple values are entered into the table. Although I was not able to fit all the values in one screenshot, the table contains 60 values.</i></b> </p>
+
+Again, in order to view more tests, please watch the YouTube demo.
+
+It appears our houseplant monitor is working as expected! Finally, our Midterm is complete!
