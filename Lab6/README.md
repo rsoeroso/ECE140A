@@ -12,7 +12,35 @@
 
 ### Tutorial 1: Setup Raspberry Pi
     
-This tutorial 
+In Tutorial 1, we set up the Rasberry Pi for the first time. This includes running the PiOS imaging program and flashing the SD card.
+
+Once we got the Raspberry Pi up and running, we checked for updates:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9439.jpg?raw=true" />
+</p>
+
+<p align="center"> <b><i>Running sudo apt update shows that all of our files are up to date.</i></b> </p>
+
+Running the upgrade command showed that there was nothing eligible to upgrade.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9440.jpg?raw=true" />
+</p>
+
+<p align="center"> <b><i>No upgrades were completed.</i></b> </p>
+
+With that out of the way, we could get the MySQL connector added to the Raspberry Pi. This is essential for the midterm challenge.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9441.jpg?raw=true" />
+</p>
+
+<p align="center"> <b><i>Shown above is the MySQL connector working as expected.</i></b> </p>
+
+With MySQL installed, we created a new user with all admin privileges granted.
+
+In order to test that the Pi is working correctly, we cloned the code for Lab 5, Tutorial 3. Output is shown below:
 
 <img src="screenshots/t1.png" alt="home page" width="300">
 <img src="screenshots/t2.png" alt="home page" width="300">
@@ -21,13 +49,23 @@ This tutorial
 <img src="screenshots/t5.png" alt="home page" width="300">
 <img src="screenshots/t6.png" alt="home page" width="300">
 
+With that taken care of, we are ready to move on to Tutorial 2!
+
 <br><br>
 
 <hr>
 
 ### Tutorial 2: Basic I/O on Raspberry Pi
 
-In this tutorial, we learned to use sensors from our kit on Raspberry Pi. First, we connected the ultrasonic sensor and the piezoelectric buzzer to the breadboard, as instructed in the tutorial. After we run the provided code, we observed that the ultrasonic sensor was sampled every second, returning a distance value in cm. The buzzer will ring whenever the distance is greater than 0, i.e. whenever the ultrasonic sensor detects any object in front of it. We also learned the two ways of setting up Raspberry Pi in Python; ```GPIO.setmode(GPIO.BCM)``` and ```GPIO.setmode(GPIO.BOARD)```. This is crucial for determining the initialization of the pins in our code. 
+In this Tutorial, we learned to use sensors from our kit on Raspberry Pi. First, we connected the ultrasonic sensor and the piezoelectric buzzer to the breadboard, as instructed in the tutorial. After we run the provided code, we observed that the ultrasonic sensor was sampled every second, returning a distance value in cm. The buzzer will ring whenever the distance is greater than 0, i.e. whenever the ultrasonic sensor detects any object in front of it. We also learned the two ways of setting up Raspberry Pi in Python; ```GPIO.setmode(GPIO.BCM)``` and ```GPIO.setmode(GPIO.BOARD)```. This is crucial for determining the initialization of the pins in our code. 
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/IMG_9456.jpg?raw=true" />
+</p>
+
+<p align="center"> <b><i>Above is the complete circuit for Tutorial 2.</i></b> </p>
+
+With both tutorials completed, we now have the necessary tools for the Midterm Challenge!
 
 <hr>
 
@@ -53,7 +91,7 @@ Finally, we can run the program using:
 
 #### Report
 
-[Link to Demo Video](https://duckduckgo.com)
+## [Link to Demo Video](https://youtu.be/AtVoYA2o84A)
 
 For our Midterm, we decided to implement a website that offers feedback on lighting, temperature, and humidity conditions, as they pertain to household plants!
 
