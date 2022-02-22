@@ -165,7 +165,7 @@ In order for our webpage to actually function correctly, we had to implement RES
 
 - getTemperature():
 	
-	getTemperature() reads the temperature from the DHT11 and returns a float value pertaining to that temperature.
+  getTemperature() reads the temperature from the DHT11 and returns a float value pertaining to that temperature.
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/getTemp.png?raw=true" />
@@ -175,7 +175,7 @@ In order for our webpage to actually function correctly, we had to implement RES
 
 - getHumidity()
 
-getHumidity() reads the humidity from the DHT11 and returns a float value for the humidity.
+  getHumidity() reads the humidity from the DHT11 and returns a float value for the humidity.
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/getHumid.png?raw=true" />
@@ -185,7 +185,7 @@ getHumidity() reads the humidity from the DHT11 and returns a float value for th
 
 - getLight()
 
-getLight() returns the ADC value from the Photoresistor as an integer. Lower values = large amount of light, higher values = less light.
+  getLight() returns the ADC value from the Photoresistor as an integer. Lower values = large amount of light, higher values = less light.
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/getLight.png?raw=true" />
@@ -195,7 +195,7 @@ getLight() returns the ADC value from the Photoresistor as an integer. Lower val
 
 - shiftOut()
 
-the shiftOut() function is a function used for the LED bargraph. It creates a cascading waterfall effect, which can be seen in the end of the demo video.
+  the shiftOut() function is a function used for the LED bargraph. It creates a cascading waterfall effect, which can be seen in the end of the demo video.
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab6/screenshots/chal1/shift.png?raw=true" />
