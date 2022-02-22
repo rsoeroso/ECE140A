@@ -55,9 +55,6 @@ function submit() {
     fetch(theURL)
     .then(response=>response.json())
     .then(function(response) {
-        // for(var key in response) {
-        //     document.getElementById(key).textContent = key + '\t: ' + response[key];
-        // }
         document.getElementById('error').textContent = response['error'];
         document.getElementById('light_avg').textContent = 'Light\t\t\t: ' + response['light_avg'];
         document.getElementById('temp_avg').textContent = 'Temperature\t: ' + response['temp_avg'] + '°F';
@@ -196,7 +193,7 @@ function submit() {
             {
                 if (sensor_id == 1)
                 {
-                    msg = 'Perfect brighness, temperature, and humidity!'
+                    msg = 'Perfect brightness, temperature, and humidity!'
                 }
                 else if(sensor_id == 2)
                 {  

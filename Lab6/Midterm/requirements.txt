@@ -1,0 +1,3 @@
+pyramid
+python-dotenv
+mysql-connector
