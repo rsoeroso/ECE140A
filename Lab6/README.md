@@ -65,7 +65,7 @@ In this Tutorial, we learned to use sensors from our kit on Raspberry Pi. First,
 
 <p align="center"> <b><i>Above is the complete circuit for Tutorial 2.</i></b> </p>
 
-With both tutorials completed, we now have the necessary tools for the Midterm Challenge!
+With both tutorials completed, we now have the necessary tools to complete the Midterm Challenge!
 
 <hr>
 
