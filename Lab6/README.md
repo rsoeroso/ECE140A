@@ -231,7 +231,11 @@ the shiftOut() function is a function used for the LED bargraph. It creates a ca
 
 - startTimer()
 
+  Starts the countdown timer when the user requests an average value reading.
+
 - checkSecond(sec)
+
+  This method ensures that our timer works correctly. The minute value is decremented when checkSecond() reads a zero from the second placeholder of the timer.
 
 #### ```init-db.py```
 
