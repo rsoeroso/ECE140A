@@ -49,7 +49,7 @@ In order to test that the Pi is working correctly, we cloned the code for Lab 5,
 <img src="screenshots/t5.png" alt="home page" width="300">
 <img src="screenshots/t6.png" alt="home page" width="300">
 
-With that taken care of, we are ready to move on to Tutorial 2!
+With that taken care of, the Raspberry Pi is functioning with Python, as expected. Now we are ready to move on to Tutorial 2!
 
 <br><br>
 
