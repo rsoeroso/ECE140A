@@ -12,13 +12,13 @@
 
 ### Tutorial 1: Say Cheese!
     
-In Tutorial 1, we set up the Rasberry Pi for the first time. This includes running the PiOS imaging program and flashing the SD card.
+In Tutorial 1, we must install OpenCV on our Raspberry Pi in order to interface with the ArduCam.
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut1/cvinstall.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>Running sudo apt update shows that all of our files are up to date.</i></b> </p>
+<p align="center"> <b><i>Installing OpenCV on the Raspberry Pi, through an SSH connection.</i></b> </p>
 
 
 
