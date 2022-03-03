@@ -58,16 +58,41 @@ Tutorial 1 is now complete. Now onto Tutorial 2!
 
 ### Tutorial 2: Sudoku Solver
 
-In Tutorial 2, we use a Sudoku puzzle to get familiar with the image processing capabilities of OpenCV and Tesseract.
+In Tutorial 2, we use a Sudoku puzzle to get familiar with the image processing capabilities of OpenCV and PyTesseract.
 
-
+To get started, we first followed the instructions for installing PyTesseract on our machine. We were able to test the given image to see if PyTesseract was working correctly:
 
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut2/tess.png?raw=true" />
 </p>
 
-<p align="center"> <b><i></i></b> </p>
+<p align="center"> <b><i>Running the test image shows that PyTesseract is detecting text from the image correctly.</i></b> </p>
 
+<br>
+
+With that configured, we are now able to follow the instructions for implementing a Sudoku solver. We copied over the code for processing the given Sudoku image with OpenCV. After applying several filters such as blur and threshold, as well as perspective editing, we were able to get the following output:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut2/result.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>We can see that, by using funcionalities built into OpenCV, we are able to extract the Sudoku table in the correct perspective.</i></b> </p>
+
+<br>
+
+Running the produced image through the PyTesseract algorithm (one number box at a time) produces the following text conversion:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut2/sudoku.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>In the terminal, the code shows the coordinates of the found contour of the Sudoku table, as well as the output of running each number box through PyTesseract.</i></b> </p>
+
+<br>
+
+Although we were not able to implement an actual Sudoku solving algorithm, this Tutorial was crucial for understanding how to take regular images and use OpenCV for extracting the text from them.
+
+We are now ready to complete the Challenge!
 
 <hr>
 
