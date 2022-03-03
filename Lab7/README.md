@@ -20,13 +20,46 @@ In Tutorial 1, we must install OpenCV on our Raspberry Pi in order to interface 
 
 <p align="center"> <b><i>Installing OpenCV on the Raspberry Pi, through an SSH connection.</i></b> </p>
 
+<br>
 
+We then run the following code to check which version of OpenCV we have installed:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut1/cvversion.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Above, we can see that we have installed version 4.5.5 of OpenCV.</i></b> </p>
 
 <br>
+
+Once we verify that we have a working installation of OpenCV, we then run the lsusb command to check if the Raspberry Pi is detecting the ArduCam:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut1/lsusb.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Running the lsusb command shows that the ArduCam is detected on the Pi.</i></b> </p>
+
+<br>
+
+Now we are ready to take photos with the ArduCam! Here is a test photo:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut1/test.jpg?raw=true" />
+</p>
+
+<p align="center"> <b><i>Quick snapshot of a hallway.</i></b> </p>
+
+<br>
+
+Tutorial 1 is now complete. Now onto Tutorial 2!
 
 <hr>
 
 ### Tutorial 2: Sudoku Solver
+
+In Tutorial 2, we use a Sudoku puzzle to get familiar with the image processing capabilities of OpenCV and Tesseract.
+
 
 
 <p align="center">
@@ -78,3 +111,4 @@ When user hits the submit button, this function is triggered. It gets the input 
 
 <p align="center"> <b><i></i></b> </p>
 
+https://youtu.be/Wod1qqLDnPI
