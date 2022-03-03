@@ -129,12 +129,6 @@ When user hits the submit button, this function is triggered. It gets the input 
 - get_text(img, id):
 
   In this function, we performed additional preprocessing of the cropped image according of the plate id. We perform thresholding for all images and color inversion only for the second image. This ensures that we have black text and white as the background. Then, we pass the filtered image to ```pytesseract``` as well as eliminate the whitespace in the resulting text. This function returns the detected text.
-  
-<p align="center">
-  <img src="" />
-</p>
-
-<p align="center"> <b><i></i></b> </p>
 
 ### Testing and Implementation
 
