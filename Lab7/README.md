@@ -250,4 +250,8 @@ Finally, we want to be sure that the plate information is being stored in the My
 
 <br>
 
-We now have a local web server that runs our algorithm to detect the plate text and display it to the user, while storing the requested information into the MySQL database. Lab 7 is now complete!
+We now have a local web server that runs our algorithm to detect the plate text and display it to the user, while storing the requested information into the MySQL database. 
+
+<br>
+
+Lab 7 is now complete!
