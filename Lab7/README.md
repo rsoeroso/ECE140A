@@ -150,7 +150,7 @@ Next, we used a combination of binary and OTSU thresholding to get a crisp image
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/thresh.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Result from using thresholding on the blurred image.</i></b> </p>
 
 <br>
 
@@ -160,7 +160,7 @@ We then sent this thresholded image through Canny processing to detect edge line
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/Canny.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Getting the edge lines, using Canny.</i></b> </p>
 
 <br>
 
@@ -170,7 +170,7 @@ With the Canny image, we were now ready for finding the image contours. We then 
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/contours.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>The minimum bounding rectangle will work nicely for cropping the plate text.</i></b> </p>
 
 <br>
 
@@ -180,7 +180,7 @@ With the area to crop selected, we can observe how the original image will be cr
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/result.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>The original image placed next to the image with the cropping area shown.</i></b> </p>
 
 <br>
 
@@ -190,7 +190,7 @@ Now that we had the cropping region confirmed, we used the rectangle to crop the
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/cropped.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>The cropped image is both horizontally and vertically compressed so the text can be extracted.</i></b> </p>
 
 <br>
 
@@ -200,43 +200,37 @@ Finally, we run the code in order to test if the plate detection is working corr
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/test.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>For the most part, our algorithm is working! The OCR algorithm mistakes the '8' for a 'B'.</i></b> </p>
 
 <br>
 
-We got the Arizona plate implemented! The other two plates were much easier to process by using a pipeline of blur, Canny, and contours.
+We got the Arizona plate implemented! The other two plates were much easier to process by using a pipeline of applying blur, Canny, and finding contours.
 
 <br>
 
 Now with our detection algorithm working correctly, we ran the local server in order to verify that the webpage was displaying the correct plates and their respective texts.
 
-Arizona Plate:
+**Arizona Plate:**
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/1.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
-
 <br>
 
-Tesla Plate:
+**California Plate:**
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/2.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
-
 <br>
 
-Delaware Plate:
+**Delaware Plate:**
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/3.png?raw=true" />
 </p>
-
-<p align="center"> <b><i>.</i></b> </p>
 
 <br>
 
@@ -246,7 +240,7 @@ Additionally, we can see that the terminal is functioning correctly to display t
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/allplates.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Expected output shown in the terminal.</i></b> </p>
 
 <br>
 
@@ -256,7 +250,7 @@ Finally, we want to be sure that the plate information is being stored in the My
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/mysql.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>All of our plate data is dynamically stored in our MySQL database when the user hits the 'Submit' button.</i></b> </p>
 
 <br>
 
