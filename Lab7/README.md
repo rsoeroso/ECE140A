@@ -136,4 +136,128 @@ When user hits the submit button, this function is triggered. It gets the input 
 
 <p align="center"> <b><i></i></b> </p>
 
-https://youtu.be/Wod1qqLDnPI
+### Testing and Implementation
+
+## [Link to Demo Video](https://youtu.be/Wod1qqLDnPI)
+
+Since the given plate for Arizona was much more complicated to edge detect than the other plates, we implemented a more rigorous image processing pipeline for that plate, as described below:
+
+First, we took the original image and converted it to grayscale, followed by using a Gaussian blur to reduce noise.
+
+Next, we used a combination of binary and OTSU thresholding to get a crisp image of the plate, as shown below:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/thresh.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+We then sent this thresholded image through Canny processing to detect edge lines, as shown below:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/Canny.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+With the Canny image, we were now ready for finding the image contours. We then took the first 3 largest contours and used one of them to create a minimum bounding rectangle around the plate text:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/contours.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+With the area to crop selected, we can observe how the original image will be cropped by placing the minimum bounding rectangle on the original image:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/result.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+Now that we had the cropping region confirmed, we used the rectangle to crop the thresholded image in order to convert the plate text in PyTesseract. We also had to "squish" the image such that the OCR could detect the text more easily.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/cropped.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+Finally, we run the code in order to test if the plate detection is working correctly:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/test.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+We got the Arizona plate implemented! The other two plates were much easier to process by using a pipeline of blur, Canny, and contours.
+
+<br>
+
+Now with our detection algorithm working correctly, we ran the local server in order to verify that the webpage was displaying the correct plates and their respective texts.
+
+Arizona Plate:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/1.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+Tesla Plate:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/2.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+Delaware Plate:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/3.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+Additionally, we can see that the terminal is functioning correctly to display the plate text:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/allplates.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+Finally, we want to be sure that the plate information is being stored in the MySQL database. Following the demo video, we check the Plates table to see if the data is being saved:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/mysql.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+We now have a local web server that runs our algorithm to detect the plate text and display it to the user, while storing the requested information into the MySQL database. Lab 7 is now complete!
