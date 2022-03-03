@@ -236,7 +236,7 @@ Additionally, we can see that the terminal is functioning correctly to display t
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/chal1/allplates.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>Expected output shown in the terminal.</i></b> </p>
+<p align="center"> <b><i>Expected output shown in the terminal. Again, the OCR algorithm is not perfect.</i></b> </p>
 
 <br>
 
