@@ -70,7 +70,7 @@ To get started, we first followed the instructions for installing PyTesseract on
 
 <br>
 
-With that configured, we are now able to follow the instructions for implementing a Sudoku solver. We copied over the code for processing the given Sudoku image with OpenCV. After applying several filters such as blur and threshold, as well as perspective editing, we were able to get the following output:
+With that configured, we were now able to follow the instructions for implementing a Sudoku solver. We copied over the code for processing the given Sudoku image with OpenCV. After applying several filters such as blur and threshold, as well as perspective editing, we were able to get the following output:
 
 <p align="center">
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut2/result.png?raw=true" />
@@ -86,7 +86,7 @@ Running the produced image through the PyTesseract algorithm (one number box at 
   <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab7/screenshots/tut2/sudoku.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>In the terminal, the code shows the coordinates of the found contour of the Sudoku table, as well as the output of running each number box through PyTesseract.</i></b> </p>
+<p align="center"> <b><i>In the terminal, the code shows the coordinates of the found contour corners of the Sudoku table, as well as the output of running each number box through PyTesseract.</i></b> </p>
 
 <br>
 
