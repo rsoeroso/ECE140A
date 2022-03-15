@@ -17,7 +17,7 @@ Tutorial 1 has us using CAD to design a camera mount that works with our stepper
 We decided to use Solidworks to create the mount design, as it is the most familiar CAD program to us.
 
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut1/cad.png?raw=true" />
 </p>
 
 <p align="center"> <b><i>Above is the completed drawing for the camera mount.</i></b> </p>
@@ -25,7 +25,7 @@ We decided to use Solidworks to create the mount design, as it is the most famil
 <br>
 
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut1/3d.png?raw=true" />
 </p>
 
 <p align="center"> <b><i>The finished 3D model in Solidworks.</i></b> </p>
