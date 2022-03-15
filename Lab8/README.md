@@ -32,6 +32,18 @@ We decided to use Solidworks to create the mount design, as it is the most famil
 
 <br>
 
+Adding the camera to the mount and the stepper motor was straightforward:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut1/camera.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Full assembly of camera, mount, and motor.</i></b> </p>
+
+<br>
+
+We are now ready to move on to Tutorial 2!
+
 <hr>
 
 ### Tutorial 2: Introduction to GPS
