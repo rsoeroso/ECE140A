@@ -24,6 +24,14 @@ We decided to use Solidworks to create the mount design, as it is the most famil
 
 <br>
 
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>The finished 3D model in Solidworks.</i></b> </p>
+
+<br>
+
 <hr>
 
 ### Tutorial 2: Introduction to GPS
