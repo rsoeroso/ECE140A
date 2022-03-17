@@ -99,6 +99,21 @@ We are now ready to move on to Tutorial 2!
 <p align="center"> <b><i>.</i></b> </p>
 
 ### Functions
+#### ```rest.js```
+
+- click_submit():
+
+When user hits the ```submit``` button, this function is triggered. It retreives an input from the drop down menu and send a URI to the server. It fetches the response back and inject the corresponding GPS coordinates detected into the webpage. 
+
+- click_store():
+
+When user hits the ```Store object location``` button, this function is triggered. It sends a URI, telling the server to store the previously retreived object's coordinates into the database. 
+
+#### ```app.py```
+
+- get_object(req):
+
+- store_location(req):
 
 <br>
 
