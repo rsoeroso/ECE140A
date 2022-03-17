@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title> The ECE140A Final Boss </title>
+ </head>
+ <body>
+    <h1>Object Detector</h1>
+    <div>Select one of the available objects!</div>
+    <select name="object" id="object">
+      <option value=1>Object 1</Object></Object></option>
+      <option value=2>Object 2</option>
+      <option value=3>Object 3</option>
+    </select>
+    <input type="button" value="Submit" onclick="click_submit()"> 
+    <br><br>
+    <div id="error"></div>
+    <div id="GPS_coord">GPS coordinates: </div>
+    <br>
+    <input type="button" value="Store object location" onclick="click_store()"> 
+    <br>
+    <div id='store_msg'></div>
+    <script type="text/javascript" src="rest.js"></script>
+ </body>
+</html>
