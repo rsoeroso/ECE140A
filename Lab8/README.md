@@ -92,6 +92,9 @@ We are now ready to move on to Tutorial 2!
 
 ### Challenge 1: ECE 140a Final Boss
 
+
+In this challenge, we made an application to detect an object using a camera then its GPS coordinates and address. We provide three objects to detect in which the user chooses it. Next, the user clicks the ```submit``` button to send the request to the server. The server will query the object characteristics from the database and process it for the camera to detect. After the object is successfully detected, it will then find the GPS coordinates of the object and return it back to the client. Additionally, the user will have an option to store the objects' location data into the database by clicking the ```Store object location``` button. If the user chose to do that, the server will insert the object location data to the database.
+
 <p align="center">
   <img src="" />
 </p>
@@ -103,17 +106,21 @@ We are now ready to move on to Tutorial 2!
 
 - click_submit():
 
-When user hits the ```submit``` button, this function is triggered. It retreives an input from the drop down menu and send a URI to the server. It fetches the response back and inject the corresponding GPS coordinates detected into the webpage. 
+  When user hits the ```submit``` button, this function is triggered. It retreives an input from the drop down menu and send a URI to the server. It fetches the response back and inject the corresponding GPS coordinates detected into the webpage. 
 
 - click_store():
 
-When user hits the ```Store object location``` button, this function is triggered. It sends a URI, telling the server to store the previously retreived object's coordinates into the database. 
+  When user hits the ```Store object location``` button, this function is triggered. It sends a URI, telling the server to store the previously retreived object's coordinates into the database. 
 
 #### ```app.py```
 
 - get_object(req):
+  
+  This function is called when the client requests a route to detect a particular object and retrieve its location. First, it parses the object id. Next, it query the HSV value of the object from the database. Then, it calls ```find_object()``` function, instructing the camera to detect the object of interest. When the object is found, it returns a response that consists of object name, GPS coordinates, and address (city and country).
 
 - store_location(req):
+
+  When the user decided to store the object location into the database, this function is called. It first checks whether the same type of object already exists in the database. If we found the same type of object, we append a number at the end of object's name based on the inserting order. If an object doesn't exist in the database yet, it directly stores the name as it is. 
 
 <br>
 
