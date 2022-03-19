@@ -35,7 +35,7 @@ We decided to use Solidworks to create the mount design, as it is the most famil
 Adding the camera to the mount and the stepper motor was straightforward:
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut1/camera.png?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut1/camera.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>Full assembly of camera, mount, and motor.</i></b> </p>
@@ -53,7 +53,7 @@ In Tutorial 2, we set up the GPS module with the Raspberry Pi so we can get our 
 Firstly, we went ahead and soldered the pins to the PCB to get more consistency with measuring the location. Next, we built the circuit on the breadboard.
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/circuit.png?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/circuit.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>Above is the GPS circuit interfacing with the Pi.</i></b> </p>
@@ -150,7 +150,7 @@ In Tutorial 4, we learn how to connect a Stepper motor to the Pi and how to cont
 First, we build the circuit, according to the Freenove tutorial:
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut4/circuit.png?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut4/circuit.jpg?raw=true" />
 </p>
 
 <p align="center"> <b><i>The Stepper motor circuit.</i></b> </p>
