@@ -48,41 +48,144 @@ We are now ready to move on to Tutorial 2!
 
 ### Tutorial 2: Introduction to GPS
 
+In Tutorial 2, we set up the GPS module with the Raspberry Pi so we can get our location.
+
+Firstly, we went ahead and soldered the pins to the PCB to get more consistency with measuring the location. Next, we built the circuit on the breadboard.
+
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/circuit.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Above is the GPS circuit interfacing with the Pi.</i></b> </p>
+
+<br>
+
+Next, we took the software precautions necessary to get the GPS working with the Pi. After editing the boot code, we are able to see the UART module in the serial connections.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/serial.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>We can see that the GPS module is connected to the Pi.</i></b> </p>
+
+<br>
+
+We followed the tutorial to disable the 'tty' device, so we can retrieve the data from the GPS module:
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/disable.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Disabling the 'tty' service.</i></b> </p>
+
+<br>
+
+After allowing the GPS to initialize, regular GPS data starting coming through the module.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/data.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>Here is a snippet of the received data from the GPS.</i></b> </p>
+
+<br>
+
+After fixing a couple variables in the code, we ran the code, which then returned a Google Maps link to our location.
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/home.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>The GPS was able to identify that we are in Ramona, CA.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/home2.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>More output showing that the GPS is working correctly.</i></b> </p>
+
+<br>
+
+Moreover, we were able to implement Reverse Geocoding into our code. This will be important for the challenge later on.
+
+For now, we are ready to move on to Tutorial 3!
 
 <hr>
 
 ### Tutorial 3: Color Segmentation
 
+In Tutorial 3, we learn how to use the ArduCam with the Pi and OpenCV to selectively mask objects from images based on their colors. For this tutorial, we are only concerned with masking red objects.
+
+To mask the red objects in the frame, we use HSV values to select and save the red pixels, while getting rid of the rest.
+
+Running the code shows how a red box in the camera frame is masked.
+
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut3/box.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Here is our red box subject.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/mask.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>After the code completes, we can see that the red box is masked from the rest of the image.</i></b> </p>
+
+<br>
+
+This masking function will be essential for the final challenge.
+
+We now move on to Tutorial 4!
 
 <hr>
 
 ### Tutorial 4: Stepper Motors
 
+In Tutorial 4, we learn how to connect a Stepper motor to the Pi and how to control it.
+
+First, we build the circuit, according to the Freenove tutorial:
+
 <p align="center">
   <img src="" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>The Stepper motor circuit.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="https://media3.giphy.com/media/dKn1G69yPKKmdB9VcM/giphy.gif" />
+</p>
+
+<p align="center"> <b><i>Running the code shows how the Stepper motor works to accurately rotate the camera.</i></b> </p>
+
+<br>
+
+Changing the wait time between steps causes the motor to spin faster or slower, depending on if the wait time is reduced or increased, respectively.
+
+We are now ready for Tutorial 5!
 
 <hr>
 
 ### Tutorial 5: PID Controller
 
+In Tutorial 5, we learn how to implement a PID controller to accurately and efficiently detect a certain object in the camera frame. 
+
 <p align="center">
   <img src="" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>We found that a Kp value of 0.001 worked well with the PID controller.</i></b> </p>
+
+<br>
+
+Having an effective PID controller is important for detecting our object in the image as fast as possible.
+
+With all of the Tutorials complete, we are finally ready for the last Challenge.
 
 <hr>
 
