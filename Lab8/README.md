@@ -238,7 +238,7 @@ To test our program, we started by creating a MySQL table populated with 3 diffe
 ### Test: Red Box
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/chal1/red_box.png?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/chal1/red box.png?raw=true" />
 </p>
 
 <p align="center"> <b><i>Testing the Red Box shows that the camera locates the box and returns the GPS location.</i></b> </p>
