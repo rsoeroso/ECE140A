@@ -130,7 +130,7 @@ Running the code shows how a red box in the camera frame is masked.
 <br>
 
 <p align="center">
-  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut2/mask.png?raw=true" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut3/mask.png?raw=true" />
 </p>
 
 <p align="center"> <b><i>After the code completes, we can see that the red box is masked from the rest of the image.</i></b> </p>
@@ -176,7 +176,7 @@ We are now ready for Tutorial 5!
 In Tutorial 5, we learn how to implement a PID controller to accurately and efficiently detect a certain object in the camera frame. 
 
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut5/code.png?raw=true" />
 </p>
 
 <p align="center"> <b><i>We found that a Kp value of 0.001 worked well with the PID controller.</i></b> </p>
