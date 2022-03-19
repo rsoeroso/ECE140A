@@ -150,7 +150,7 @@ In Tutorial 4, we learn how to connect a Stepper motor to the Pi and how to cont
 First, we build the circuit, according to the Freenove tutorial:
 
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/tut4/circuit.png?raw=true" />
 </p>
 
 <p align="center"> <b><i>The Stepper motor circuit.</i></b> </p>
@@ -204,6 +204,8 @@ In this challenge, we made an application to detect an object using a camera the
 
 <p align="center"> <b><i>.</i></b> </p>
 
+<br>
+
 ### Functions
 #### ```rest.js```
 
@@ -230,6 +232,54 @@ In this challenge, we made an application to detect an object using a camera the
 ### Testing and Implementation
 
 ## [Link to Demo Video]()
+
+<br>
+
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
+
+<br>
+
+<p align="center">
+  <img src="" />
+</p>
+
+<p align="center"> <b><i>.</i></b> </p>
 
 <br>
 
