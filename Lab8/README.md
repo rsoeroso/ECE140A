@@ -198,14 +198,6 @@ With all of the Tutorials complete, we are finally ready for the last Challenge.
 
 In this challenge, we made an application to detect an object using a camera then its GPS coordinates and address. We provide three objects to detect in which the user chooses it. Next, the user clicks the ```submit``` button to send the request to the server. The server will query the object characteristics from the database and process it for the camera to detect. After the object is successfully detected, it will then find the GPS coordinates of the object and return it back to the client. Additionally, the user will have an option to store the objects' location data into the database by clicking the ```Store object location``` button. If the user chose to do that, the server will insert the object location data to the database.
 
-<p align="center">
-  <img src="" />
-</p>
-
-<p align="center"> <b><i>.</i></b> </p>
-
-<br>
-
 ### Functions
 #### ```rest.js```
 
@@ -231,55 +223,61 @@ In this challenge, we made an application to detect an object using a camera the
 
 ### Testing and Implementation
 
-## [Link to Demo Video]()
+## [Link to Demo Video](https://youtu.be/wpSExz18fxk)
+
+To test our program, we started by creating a MySQL table populated with 3 different colored objects (Red, Blue and Green). We inserted the four HSV values seperately into the table for each object for ease of implementation.
+
+<p align="center">
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/chal1/objects.png?raw=true" />
+</p>
+
+<p align="center"> <b><i>The above MySQL table holds the unique Hue value ranges for red, blue, and green, respectively.</i></b> </p>
 
 <br>
 
+### Test: Red Box
+
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/chal1/red_box.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Testing the Red Box shows that the camera locates the box and returns the GPS location.</i></b> </p>
 
 <br>
 
+### Test: Blue Album
+
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/chal1/blue.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Similar to the Red Box, the Blue Album is found and the GPS location is returned.</i></b> </p>
 
 <br>
 
+### Test: Green Folder
+
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/chal1/green.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Again, the object is found by the camera and its GPS location is returned on the webpage.</i></b> </p>
 
 <br>
 
+We note that all of the objects use reverse geocoding to print the city name they are located in.
+
+Checking the MySQL table to see if repeat objects are appended with an index:
+
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/rsoeroso/ECE140A/blob/main/Lab8/Images/chal1/append.png?raw=true" />
 </p>
 
-<p align="center"> <b><i>.</i></b> </p>
+<p align="center"> <b><i>Multiple objects are handled as expected in the MySQL table.</i></b> </p>
 
 <br>
 
-<p align="center">
-  <img src="" />
-</p>
-
-<p align="center"> <b><i>.</i></b> </p>
-
-<br>
-
-<p align="center">
-  <img src="" />
-</p>
-
-<p align="center"> <b><i>.</i></b> </p>
+After testing our system, we can conclude that our camera tracker is working as expected.
 
 <br>
 
